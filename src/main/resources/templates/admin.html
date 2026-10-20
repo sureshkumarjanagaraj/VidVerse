@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="/admin.css?v=1">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            VidVerse
+        </div>
+
+        <div class="nav-links">
+
+            <button onclick="window.location.href='/'">
+                Home
+            </button>
+
+            <button onclick="window.location.href='/about'">
+                About
+            </button>
+
+            <button onclick="window.location.href='/login'">
+                Login
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         DASHBOARD
+    ========================= -->
+
+    <main class="dashboard">
+
+
+        <!-- DASHBOARD HEADER -->
+
+        <section class="dashboard-header">
+
+            <span class="dashboard-label">
+                VIDVERSE ADMIN
+            </span>
+
+            <h1>
+                Admin Dashboard
+            </h1>
+
+            <p>
+                Welcome to the VidVerse administration panel.
+                Manage video songs and user accounts from here.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             ADMIN OPERATIONS
+        ========================= -->
+
+        <section class="operations">
+
+            <div class="section-title">
+
+                <h2>
+                    Admin Operations
+                </h2>
+
+                <p>
+                    Select an operation to continue.
+                </p>
+
+            </div>
+
+
+            <div class="operation-container">
+
+
+
+                <!-- =========================
+                     01 - ADD VIDEO
+                ========================= -->
+
+                <div class="operation-card">
+
+                    <div class="operation-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Add Video Song
+                    </h3>
+
+                    <p>
+                        Upload and add a new video song to
+                        the VidVerse premium collection.
+                    </p>
+
+                    <a href="/uploadvideo">
+                        Add Video
+                    </a>
+
+                </div>
+
+
+
+                <!-- =========================
+                     02 - ALL USERS
+                ========================= -->
+
+                <div class="operation-card">
+
+                    <div class="operation-number">
+                        02
+                    </div>
+
+                    <h3>
+                        View All Users
+                    </h3>
+
+                    <p>
+                        View the details of all registered
+                        VidVerse users.
+                    </p>
+
+                    <a href="/fetchAllUserData">
+                        View Users
+                    </a>
+
+                </div>
+
+
+
+                <!-- =========================
+                     03 - MAKE ADMIN
+                ========================= -->
+
+				<div class="operation-card">
+
+				    <div class="operation-number">
+				        03
+				    </div>
+
+				    <h3>
+				        Make User Admin
+				    </h3>
+
+				    <p>
+				        Change a registered user's role
+				        from USER to ADMIN.
+				    </p>
+
+				    <a href="/make-admin">
+				        Make Admin
+				    </a>
+
+				</div>
+
+                <!-- =========================
+                     04 - PARTICULAR USER
+                ========================= -->
+
+				<div class="operation-card">
+
+				    <div class="operation-number">
+				        04
+				    </div>
+
+				    <h3>
+				        Find User
+				    </h3>
+
+				    <p>
+				        Search and view the details of a
+				        particular VidVerse user.
+				    </p>
+
+				    <a href="/find-user">
+				        Find User
+				    </a>
+
+				</div>
+
+
+
+                <!-- =========================
+                     05 - REMOVE USER
+                ========================= -->
+
+                <div class="operation-card">
+
+                    <div class="operation-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Remove User
+                    </h3>
+
+                    <p>
+                        Remove a particular user account
+                        from the VidVerse platform.
+                    </p>
+
+                    <a href="/remove-user">
+                        Remove User
+                    </a>
+
+                </div>
+
+
+
+                <!-- =========================
+                     06 - WATCH VIDEOS
+                ========================= -->
+
+                <div class="operation-card">
+
+                    <div class="operation-number">
+                        06
+                    </div>
+
+                    <h3>
+                        Watch Video Songs
+                    </h3>
+
+                    <p>
+                        Open the video-song collection and
+                        view the available content.
+                    </p>
+
+                    <a href="/watch-videos">
+                        Watch Videos
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             QUICK NAVIGATION
+        ========================= -->
+
+        <section class="quick-links">
+
+            <a href="/">
+                Go to Home
+            </a>
+
+            <a href="/login">
+                Login Page
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            VidVerse
+        </div>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj.
+            All Rights Reserved.
+        </p>
+
+        <p class="footer-tagline">
+            Secure &nbsp; • &nbsp;
+            Premium &nbsp; • &nbsp;
+            Entertainment
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
+
+.navbar {
+    height: 72px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #172033;
+
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.nav-links button {
+    padding: 10px 17px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.nav-links button:hover {
+    background-color: #f1f5f9;
+
+    color: #172033;
+}
+
+.nav-links .register-btn {
+    background-color: #2563eb;
+
+    color: #ffffff;
+}
+
+.nav-links .register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =====================================================
+   SUCCESS SECTION
+===================================================== */
+
+.success-section {
+    flex: 1;
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 70px 20px;
+
+    background:
+        linear-gradient(
+            rgba(9, 15, 28, 0.82),
+            rgba(9, 15, 28, 0.88)
+        ),
+        url("https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =====================================================
+   SUCCESS CARD
+===================================================== */
+
+.success-card {
+    width: 100%;
+
+    max-width: 650px;
+
+    padding: 55px 50px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   SUCCESS ICON
+===================================================== */
+
+.success-icon {
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 38px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.success-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.success-card h1 {
+    margin-bottom: 15px;
+
+    color: #172033;
+
+    font-size: 38px;
+
+    line-height: 1.25;
+
+    font-weight: 650;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.success-card p {
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.button-container {
+    margin-top: 32px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+}
+
+.button-container a {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+
+/* Primary */
+
+.primary-btn {
+    background-color: #2563eb;
+
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Secondary */
+
+.secondary-btn {
+    border: 1px solid #cbd5e1;
+
+    background-color: #ffffff;
+
+    color: #172033;
+}
+
+.secondary-btn:hover {
+    background-color: #f1f5f9;
+
+    border-color: #94a3b8;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 30px 20px;
+
+    background-color: #0f172a;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.footer-logo {
+    margin-bottom: 6px;
+
+    color: #ffffff;
+
+    font-size: 24px;
+
+    font-weight: 700;
+}
+
+.footer-tagline {
+    margin-top: 4px;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 18px 20px;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-links button {
+        padding: 8px 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* SUCCESS */
+
+    .success-section {
+        min-height: 600px;
+
+        padding: 45px 20px;
+    }
+
+    .success-card {
+        padding: 40px 25px;
+    }
+
+    .success-icon {
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 32px;
+    }
+
+    .success-card h1 {
+        font-size: 30px;
+    }
+
+    .success-card p {
+        font-size: 15px;
+    }
+
+
+    /* BUTTONS */
+
+    .button-container {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .button-container a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 28px 20px;
+
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,481 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f9ff;
+
+    color: #1e293b;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    background: #1565c0;
+
+    color: white;
+
+    padding: 20px 50px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
+
+
+.admin-label {
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+
+    width: 90%;
+
+    max-width: 650px;
+
+    margin: 60px auto;
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(21, 101, 192, 0.12);
+
+    text-align: center;
+}
+
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.number {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #e3f2fd;
+
+    color: #1565c0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    font-size: 20px;
+}
+
+
+
+/* =========================
+   HEADING
+========================= */
+
+h1 {
+
+    color: #1565c0;
+
+    margin-bottom: 10px;
+}
+
+
+.description {
+
+    color: #64748b;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+
+    text-align: left;
+}
+
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+
+    color: #334155;
+}
+
+
+input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+input:focus {
+
+    border-color: #1565c0;
+
+    box-shadow:
+        0 0 0 3px rgba(21, 101, 192, 0.1);
+}
+
+
+
+/* =========================
+   SEARCH BUTTON
+========================= */
+
+button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #1565c0;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+
+    background: #0d47a1;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================
+   USER DETAILS
+========================= */
+
+.user-details {
+
+    margin-top: 35px;
+
+    padding: 25px;
+
+    border: 1px solid #dbeafe;
+
+    border-radius: 10px;
+
+    background: #f8fbff;
+
+    text-align: left;
+}
+
+
+.user-details h2 {
+
+    margin-top: 0;
+
+    margin-bottom: 20px;
+
+    color: #1565c0;
+
+    text-align: center;
+}
+
+
+
+/* =========================
+   DETAIL ROW
+========================= */
+
+.detail-row {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 5px;
+
+    border-bottom: 1px solid #dbeafe;
+
+    gap: 20px;
+}
+
+
+.detail-row:last-child {
+
+    border-bottom: none;
+}
+
+
+.detail-row span {
+
+    color: #64748b;
+
+    font-weight: 600;
+}
+
+
+.detail-row strong {
+
+    color: #1e293b;
+
+    text-align: right;
+
+    word-break: break-word;
+}
+
+
+
+/* =========================
+   PREMIUM
+========================= */
+
+.premium {
+
+    color: #15803d !important;
+}
+
+
+
+/* =========================
+   NORMAL USER
+========================= */
+
+.normal {
+
+    color: #64748b !important;
+}
+
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message {
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn {
+
+    display: inline-block;
+
+    margin-top: 30px;
+
+    padding: 11px 22px;
+
+    background: white;
+
+    color: #1565c0;
+
+    border: 1px solid #1565c0;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.back-btn:hover {
+
+    background: #1565c0;
+
+    color: white;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: white;
+
+    border-top: 1px solid #dbeafe;
+
+    color: #64748b;
+}
+
+
+.tagline {
+
+    color: #1565c0;
+
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 18px 25px;
+
+    }
+
+
+    .logo {
+
+        font-size: 23px;
+
+    }
+
+
+    .container {
+
+        width: 94%;
+
+        margin: 35px auto;
+
+    }
+
+
+    .card {
+
+        padding: 25px;
+
+    }
+
+
+    .detail-row {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 5px;
+
+    }
+
+
+    .detail-row strong {
+
+        text-align: left;
+
+    }
+
+}

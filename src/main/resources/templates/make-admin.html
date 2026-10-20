@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Make Admin</title>
+
+    <link rel="stylesheet"
+          href="/make-admin.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            VidVerse
+        </div>
+
+        <div class="admin-label">
+            ADMIN PANEL
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main class="container">
+
+        <div class="card">
+
+
+            <div class="number">
+                03
+            </div>
+
+
+            <h1>
+                Make User Admin
+            </h1>
+
+
+            <p class="description">
+
+                Enter the username of a registered
+                VidVerse user to change their role
+                from USER to ADMIN.
+
+            </p>
+
+
+
+            <!-- =========================
+                 MAKE ADMIN FORM
+            ========================= -->
+
+            <form action="/admin/make-admin"
+                  method="post">
+
+
+                <label for="userName">
+                    Username
+                </label>
+
+
+                <input
+                    type="text"
+                    id="userName"
+                    name="userName"
+                    placeholder="Enter username"
+                    required>
+
+
+                <button
+                    type="submit"
+                    class="make-admin-btn">
+
+                    Make Admin
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- =========================
+                 MESSAGE
+            ========================= -->
+
+            <p
+                th:if="${message}"
+                th:text="${message}"
+                class="message">
+            </p>
+
+
+
+            <!-- =========================
+                 BACK TO ADMIN
+            ========================= -->
+
+            <a href="/admin"
+               class="back-btn">
+
+                ← Back to Admin Dashboard
+
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

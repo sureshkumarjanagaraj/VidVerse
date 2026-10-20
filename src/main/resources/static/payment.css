@@ -1,0 +1,279 @@
+/* ==============================
+   GENERAL
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #172033;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    height: 72px;
+
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+
+/* ==============================
+   MAIN
+============================== */
+
+main {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+/* ==============================
+   PAYMENT CARD
+============================== */
+
+.payment-card {
+    width: 100%;
+
+    max-width: 550px;
+
+    padding: 45px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+/* ==============================
+   PREMIUM ICON
+============================== */
+
+.premium-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 24px;
+}
+
+
+/* ==============================
+   SMALL TITLE
+============================== */
+
+.small-title {
+    margin-bottom: 12px;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ==============================
+   HEADING
+============================== */
+
+.payment-card h1 {
+    margin-bottom: 18px;
+
+    color: #172033;
+
+    font-size: 36px;
+
+    line-height: 1.3;
+}
+
+
+/* ==============================
+   TEXT
+============================== */
+
+.payment-card p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.payment-card .description {
+    margin-top: 12px;
+}
+
+
+/* ==============================
+   BUTTON
+============================== */
+
+.payment-card button {
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.payment-card button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    padding: 20px;
+
+    background-color: #0f172a;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+footer b {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+}
+
+footer p {
+    margin: 2px 0;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+    header {
+        height: 65px;
+
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .payment-card {
+        padding: 35px 25px;
+    }
+
+    .payment-card h1 {
+        font-size: 29px;
+    }
+
+    .payment-card p {
+        font-size: 15px;
+    }
+
+    .payment-card button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 18px 15px;
+
+        font-size: 12px;
+    }
+
+    footer b {
+        font-size: 18px;
+    }
+}

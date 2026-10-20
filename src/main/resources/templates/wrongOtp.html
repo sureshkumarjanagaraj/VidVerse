@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - OTP Verification Failed</title>
+
+    <link rel="stylesheet"
+          th:href="@{/wrongOtp.css}">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            Vid<span>Verse</span>
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <div class="error-card">
+
+            <div class="error-icon">
+                !
+            </div>
+
+
+            <div class="small-title">
+                VIDVERSE SECURITY
+            </div>
+
+
+            <h1>
+                OTP Verification Failed
+            </h1>
+
+
+            <p class="main-message">
+                Incorrect OTP. Please check the OTP sent
+                to your email and try again.
+            </p>
+
+
+            <div class="security-message">
+
+                <span class="security-icon">
+                    ✓
+                </span>
+
+                <p>
+                    For security reasons, do not share your
+                    OTP with anyone.
+                </p>
+
+            </div>
+
+
+            <!-- Try Again -->
+
+            <a href="/forgotPassword"
+               class="primary-btn">
+
+                Try Again
+
+            </a>
+
+
+            <!-- Back to Login -->
+
+            <a href="/login"
+               class="secondary-btn">
+
+                Back to Login
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

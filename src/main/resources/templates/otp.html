@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - OTP Verification</title>
+
+    <link rel="stylesheet"
+          href="/otp.css?v=1">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            VidVerse
+        </div>
+
+        <div class="nav-links">
+
+            <button onclick="window.location.href='/'">
+                Home
+            </button>
+
+            <button onclick="window.location.href='/about'">
+                About
+            </button>
+
+            <button onclick="window.location.href='/login'">
+                Login
+            </button>
+
+            <button class="register-btn"
+                    onclick="window.location.href='/register'">
+                Register
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         OTP SECTION
+    ========================= -->
+
+    <main class="otp-section">
+
+        <div class="otp-card">
+
+            <div class="otp-icon">
+                ✓
+            </div>
+
+            <span class="page-label">
+                ACCOUNT VERIFICATION
+            </span>
+
+            <h1>
+                Verify Your OTP
+            </h1>
+
+            <p class="description">
+                We have sent a one-time password to your
+                registered email address. Enter the OTP below
+                to continue.
+            </p>
+
+
+            <form action="/verifyOtp"
+                  method="post">
+
+                <div class="form-group">
+
+                    <label for="otp">
+                        Enter OTP
+                    </label>
+
+                    <input
+                        type="text"
+                        id="otp"
+                        name="otp"
+                        placeholder="Enter your OTP"
+                        maxlength="6"
+                        required>
+
+                </div>
+
+
+                <button type="submit"
+                        class="verify-btn">
+
+                    Verify OTP
+
+                </button>
+
+            </form>
+
+
+            <div class="back-login">
+
+                <a href="/login">
+                    ← Back to Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            VidVerse
+        </div>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj.
+            All Rights Reserved.
+        </p>
+
+        <p class="footer-tagline">
+            Secure &nbsp; • &nbsp;
+            Premium &nbsp; • &nbsp;
+            Entertainment
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

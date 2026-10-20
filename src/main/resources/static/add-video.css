@@ -1,0 +1,435 @@
+/* ==================================================
+   VIDVERSE - ADD VIDEO
+   Theme: White + Navy + Blue
+   ================================================== */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #f8fafc;
+
+    color: #172033;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.logo span {
+
+    color: #2563eb;
+}
+
+
+/* ================= BACK BUTTON ================= */
+
+.back-btn {
+
+    padding: 9px 17px;
+
+    border: 1px solid #dbe3f0;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.back-btn:hover {
+
+    color: #2563eb;
+
+    border-color: #2563eb;
+
+    background: #f8fbff;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px 20px;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #f8fafc 0%,
+
+            #eef4ff 100%
+
+        );
+}
+
+
+/* ================= CARD ================= */
+
+.video-card {
+
+    width: 600px;
+
+    padding: 45px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    box-shadow:
+
+        0 15px 40px
+
+        rgba(15, 23, 42, 0.08);
+}
+
+
+/* ================= ICON ================= */
+
+.video-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    padding-left: 3px;
+
+    box-shadow:
+
+        0 7px 18px
+
+        rgba(37, 99, 235, 0.22);
+}
+
+
+/* ================= SMALL TITLE ================= */
+
+.small-title {
+
+    margin-bottom: 8px;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ================= HEADING ================= */
+
+h1 {
+
+    margin-bottom: 10px;
+
+    color: #172033;
+
+    font-size: 30px;
+}
+
+
+/* ================= SUBTITLE ================= */
+
+.subtitle {
+
+    margin-bottom: 30px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= FORM ================= */
+
+form {
+
+    width: 100%;
+}
+
+
+/* ================= FORM GROUP ================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= LABEL ================= */
+
+label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================= INPUT ================= */
+
+input,
+textarea {
+
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dbe3ec;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #172033;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+
+/* ================= TEXTAREA ================= */
+
+textarea {
+
+    resize: vertical;
+
+    min-height: 110px;
+}
+
+
+/* ================= PLACEHOLDER ================= */
+
+input::placeholder,
+textarea::placeholder {
+
+    color: #a0aec0;
+}
+
+
+/* ================= INPUT FOCUS ================= */
+
+input:focus,
+textarea:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+
+        0 0 0 3px
+
+        rgba(37, 99, 235, 0.10);
+}
+
+
+/* ================= SMALL TEXT ================= */
+
+small {
+
+    display: block;
+
+    margin-top: 7px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* ================= SUBMIT BUTTON ================= */
+
+button {
+
+    width: 100%;
+
+    margin-top: 8px;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+/* ================= BUTTON HOVER ================= */
+
+button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+
+        0 8px 20px
+
+        rgba(37, 99, 235, 0.25);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+footer p {
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    header {
+
+        padding: 0 25px;
+    }
+
+    .logo {
+
+        font-size: 25px;
+    }
+
+    main {
+
+        padding: 35px 18px;
+    }
+
+    .video-card {
+
+        width: 100%;
+
+        padding: 35px 25px;
+    }
+
+    h1 {
+
+        font-size: 26px;
+    }
+
+    .back-btn {
+
+        padding: 8px 12px;
+
+        font-size: 13px;
+    }
+}

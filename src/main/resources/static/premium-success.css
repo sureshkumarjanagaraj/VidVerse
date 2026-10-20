@@ -1,0 +1,283 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #172033;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 72px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 70px 20px;
+}
+
+
+/* =========================
+   SUCCESS CARD
+========================= */
+
+.success-card {
+    width: 100%;
+
+    max-width: 465px;
+
+    padding: 45px 40px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 9px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   SUCCESS ICON
+========================= */
+
+.success-icon {
+    width: 58px;
+
+    height: 58px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 30px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   SMALL HEADING
+========================= */
+
+.small-heading {
+    margin-bottom: 14px;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+.success-card h1 {
+    margin-bottom: 12px;
+
+    color: #172033;
+
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+.success-card h2 {
+    margin-bottom: 18px;
+
+    color: #334155;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.success-card p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+.premium-text {
+    margin-top: 8px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   WATCH BUTTON
+========================= */
+
+.watch-btn {
+    display: inline-block;
+
+    padding: 13px 27px;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.watch-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 28px 20px;
+
+    background-color: #0f172a;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+footer b {
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+footer p {
+    margin-top: 3px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 45px 20px;
+    }
+
+    .success-card {
+        padding: 35px 25px;
+    }
+
+    .success-card h1 {
+        font-size: 28px;
+    }
+
+    .success-card h2 {
+        font-size: 18px;
+    }
+
+    .success-card p {
+        font-size: 15px;
+    }
+
+    .watch-btn {
+        width: 100%;
+    }
+}

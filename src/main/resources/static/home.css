@@ -1,0 +1,690 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #172033;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
+
+.navbar {
+    height: 72px;
+
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #172033;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links button {
+    padding: 10px 17px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: transparent;
+    color: #475569;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.nav-links button:hover {
+    background-color: #f1f5f9;
+    color: #172033;
+}
+
+.nav-links .register-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.nav-links .register-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 85px 8%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(9, 15, 28, 0.97) 0%,
+            rgba(9, 15, 28, 0.90) 40%,
+            rgba(9, 15, 28, 0.65) 70%,
+            rgba(9, 15, 28, 0.30) 100%
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: #ffffff;
+}
+
+.hero-tag {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #60a5fa;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 58px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero p {
+    max-width: 620px;
+
+    color: #d1d5db;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 32px;
+}
+
+.hero-buttons button {
+    padding: 15px 30px;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.primary-btn {
+    border: none;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.outline-btn {
+    border: 1px solid #cbd5e1;
+
+    background-color: transparent;
+
+    color: #ffffff;
+}
+
+.outline-btn:hover {
+    background-color: #ffffff;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   VIDEO SONG SECTION
+===================================================== */
+
+.features {
+    padding: 90px 8%;
+
+    background-color: #ffffff;
+}
+
+.features-inner {
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.heading {
+    margin-bottom: 48px;
+
+    text-align: left;
+}
+
+.heading span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #2563eb;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+.heading h2 {
+    margin-bottom: 14px;
+
+    color: #172033;
+
+    font-size: 40px;
+
+    font-weight: 650;
+
+    line-height: 1.2;
+}
+
+.heading p {
+    max-width: 800px;
+
+    color: #64748b;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   VIDEO SONG CARDS
+===================================================== */
+
+.feature-container {
+    display: flex;
+
+    gap: 28px;
+
+    width: 100%;
+}
+
+.feature-card {
+    flex: 1;
+
+    min-height: 245px;
+
+    padding: 34px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 9px;
+
+    transition: 0.2s;
+}
+
+.feature-card:hover {
+    border-color: #93c5fd;
+
+    box-shadow:
+        0 8px 22px rgba(15, 23, 42, 0.08);
+
+    transform: translateY(-4px);
+}
+
+
+/* =====================================================
+   CARD NUMBER
+===================================================== */
+
+.feature-number {
+    margin-bottom: 28px;
+
+    color: #2563eb;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.feature-card h3 {
+    margin-bottom: 16px;
+
+    color: #172033;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   CARD DESCRIPTION
+===================================================== */
+
+.feature-card p {
+    color: #64748b;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   PREMIUM SECTION
+===================================================== */
+
+.premium {
+    padding: 85px 8%;
+
+    background-color: #eef2f7;
+}
+
+.premium-inner {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 52px 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    background-color: #172033;
+
+    border-radius: 10px;
+}
+
+.premium-text span {
+    color: #60a5fa;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.premium-text h2 {
+    margin-top: 12px;
+
+    color: #ffffff;
+
+    font-size: 38px;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+.premium-text p {
+    max-width: 650px;
+
+    margin-top: 14px;
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.premium-inner button {
+    flex-shrink: 0;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.premium-inner button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 34px 20px;
+
+    background-color: #0f172a;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.footer-logo {
+    margin-bottom: 6px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+.footer-tagline {
+    margin-top: 4px;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .hero {
+        padding: 70px 5%;
+    }
+
+    .features {
+        padding: 70px 5%;
+    }
+
+    .premium {
+        padding: 70px 5%;
+    }
+
+    .feature-container {
+        gap: 18px;
+    }
+
+    .feature-card {
+        padding: 28px;
+    }
+
+    .feature-card h3 {
+        font-size: 22px;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+    }
+
+    .premium-inner {
+        padding: 40px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 18px 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 5px;
+    }
+
+    .nav-links button {
+        font-size: 14px;
+
+        padding: 8px 12px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 520px;
+
+        padding: 65px 25px;
+
+        background:
+            linear-gradient(
+                rgba(9, 15, 28, 0.88),
+                rgba(9, 15, 28, 0.88)
+            ),
+            url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80");
+
+        background-size: cover;
+
+        background-position: center;
+    }
+
+    .hero-tag {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+
+        letter-spacing: 0;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 210px;
+    }
+
+    .hero-buttons button {
+        width: 210px;
+    }
+
+
+    /* FEATURES */
+
+    .features {
+        padding: 65px 20px;
+    }
+
+    .heading {
+        margin-bottom: 35px;
+    }
+
+    .heading span {
+        font-size: 14px;
+    }
+
+    .heading h2 {
+        font-size: 32px;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .feature-card {
+        width: 100%;
+
+        min-height: 210px;
+
+        padding: 28px;
+    }
+
+    .feature-number {
+        margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+        font-size: 22px;
+    }
+
+    .feature-card p {
+        font-size: 16px;
+    }
+
+
+    /* PREMIUM */
+
+    .premium {
+        padding: 55px 20px;
+    }
+
+    .premium-inner {
+        padding: 35px 28px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+    .premium-text h2 {
+        font-size: 30px;
+    }
+
+    .premium-text p {
+        font-size: 16px;
+    }
+
+    .premium-inner button {
+        width: 100%;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 28px 20px;
+
+        font-size: 14px;
+    }
+}

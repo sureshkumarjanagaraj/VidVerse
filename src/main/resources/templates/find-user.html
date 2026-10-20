@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Find User</title>
+
+    <link rel="stylesheet"
+          href="/find-user.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            VidVerse
+        </div>
+
+        <div class="admin-label">
+            ADMIN PANEL
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================= -->
+
+    <main class="container">
+
+
+        <div class="card">
+
+
+            <div class="number">
+                04
+            </div>
+
+
+            <h1>
+                Find User
+            </h1>
+
+
+            <p class="description">
+
+                Search for a particular VidVerse user
+                using their username.
+
+            </p>
+
+
+
+            <!-- =========================
+                 SEARCH FORM
+            ========================= -->
+
+            <form action="/admin/find-user"
+                  method="post">
+
+
+                <label for="userName">
+                    Username
+                </label>
+
+
+                <input
+                    type="text"
+                    id="userName"
+                    name="userName"
+                    placeholder="Enter username"
+                    required>
+
+
+                <button type="submit">
+                    Search User
+                </button>
+
+
+            </form>
+
+
+
+            <!-- =========================
+                 USER NOT FOUND
+            ========================= -->
+
+            <div
+                class="message"
+                th:if="${message}">
+
+                <p th:text="${message}"></p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 USER DETAILS
+            ========================= -->
+
+            <div
+                class="user-details"
+                th:if="${user}">
+
+
+                <h2>
+                    User Details
+                </h2>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        User ID
+                    </span>
+
+                    <strong
+                        th:text="${user.userId}">
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Username
+                    </span>
+
+                    <strong
+                        th:text="${user.userName}">
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Email
+                    </span>
+
+                    <strong
+                        th:text="${user.email}">
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Phone Number
+                    </span>
+
+                    <strong
+                        th:text="${user.phoneNumber}">
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Role
+                    </span>
+
+                    <strong
+                        th:text="${user.role}">
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Premium Status
+                    </span>
+
+                    <strong
+                        th:if="${user.premium}"
+                        class="premium">
+
+                        Premium
+
+                    </strong>
+
+
+                    <strong
+                        th:unless="${user.premium}"
+                        class="normal">
+
+                        Normal
+
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================
+                 BACK BUTTON
+            ========================= -->
+
+            <a href="/admin"
+               class="back-btn">
+
+                ← Back to Admin Dashboard
+
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj.
+            All Rights Reserved.
+        </p>
+
+        <p class="tagline">
+
+            Secure &nbsp; • &nbsp;
+            Premium &nbsp; • &nbsp;
+            Entertainment
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

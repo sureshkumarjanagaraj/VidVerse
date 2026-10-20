@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Account Exists</title>
+
+    <link rel="stylesheet"
+          th:href="@{/userExists.css}">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            Vid<span>Verse</span>
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <div class="error-card">
+
+            <div class="error-icon">
+                !
+            </div>
+
+            <div class="small-title">
+                VIDVERSE ACCOUNT
+            </div>
+
+            <h1>
+                Account Already Exists
+            </h1>
+
+            <p>
+                An account with these details is already
+                registered with VidVerse.
+            </p>
+
+            <p class="info-text">
+                Please use your existing account to log in
+                and continue watching your favorite videos.
+            </p>
+
+
+            <a href="/login" class="login-btn">
+                Go to Login
+            </a>
+
+
+            <a href="/register" class="register-btn">
+                Create Another Account
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+			© 2026 Sureshkumar Janagaraj. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

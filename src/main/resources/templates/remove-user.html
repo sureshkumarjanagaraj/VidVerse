@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Remove User</title>
+
+    <link rel="stylesheet"
+          href="/remove-user.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            VidVerse
+        </div>
+
+        <div class="admin-label">
+            ADMIN PANEL
+        </div>
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN
+    ========================= -->
+
+    <main class="container">
+
+        <div class="card">
+
+
+            <div class="number">
+                05
+            </div>
+
+
+            <h1>
+                Remove User
+            </h1>
+
+
+            <p class="description">
+
+                Enter the username of the user you
+                want to remove from VidVerse.
+
+            </p>
+
+
+
+            <!-- =========================
+                 WARNING
+            ========================= -->
+
+            <div class="warning">
+
+                ⚠ This action will permanently
+                remove the user account.
+
+            </div>
+
+
+
+            <!-- =========================
+                 REMOVE FORM
+            ========================= -->
+
+            <form action="/admin/remove-user"
+                  method="post"
+                  onsubmit="return confirmRemove();">
+
+
+                <label for="userName">
+                    Username
+                </label>
+
+
+                <input
+                    type="text"
+                    id="userName"
+                    name="userName"
+                    placeholder="Enter username"
+                    required>
+
+
+                <button type="submit"
+                        class="remove-btn">
+
+                    Remove User
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- =========================
+                 MESSAGE
+            ========================= -->
+
+            <div
+                class="message"
+                th:if="${message}">
+
+                <p th:text="${message}">
+                </p>
+
+            </div>
+
+
+
+            <!-- =========================
+                 BACK
+            ========================= -->
+
+            <a href="/admin"
+               class="back-btn">
+
+                ← Back to Admin Dashboard
+
+            </a>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj.
+            All Rights Reserved.
+        </p>
+
+        <p class="tagline">
+
+            Secure &nbsp; • &nbsp;
+            Premium &nbsp; • &nbsp;
+            Entertainment
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         CONFIRMATION
+    ========================= -->
+
+    <script>
+
+        function confirmRemove() {
+
+            return confirm(
+                "Are you sure you want to remove this user?"
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

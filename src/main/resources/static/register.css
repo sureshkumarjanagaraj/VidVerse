@@ -1,0 +1,438 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
+
+.navbar {
+    height: 72px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #172033;
+
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.nav-links button {
+    padding: 10px 17px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: transparent;
+
+    color: #475569;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.nav-links button:hover {
+    background-color: #f1f5f9;
+
+    color: #172033;
+}
+
+
+/* =====================================================
+   REGISTER PAGE
+===================================================== */
+
+.register-page {
+    flex: 1;
+
+    min-height: 720px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 70px 20px;
+
+    /*
+       Music / Entertainment Background
+    */
+
+    background:
+        linear-gradient(
+            rgba(9, 15, 28, 0.82),
+            rgba(9, 15, 28, 0.88)
+        ),
+        url("https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+/* =====================================================
+   REGISTER CARD
+===================================================== */
+
+.register-card {
+    width: 100%;
+
+    max-width: 520px;
+
+    padding: 45px;
+
+    background-color: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   REGISTER HEADER
+===================================================== */
+
+.register-header {
+    text-align: center;
+
+    margin-bottom: 32px;
+}
+
+.register-tag {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.register-header h1 {
+    margin-bottom: 14px;
+
+    color: #172033;
+
+    font-size: 36px;
+
+    line-height: 1.2;
+}
+
+.register-header p {
+    color: #64748b;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.register-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.form-group label {
+    color: #172033;
+
+    font-size: 16px;
+
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    background-color: #ffffff;
+
+    color: #172033;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =====================================================
+   REGISTER BUTTON
+===================================================== */
+
+.register-submit {
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.register-submit:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =====================================================
+   LOGIN LINK
+===================================================== */
+
+.login-link {
+    margin-top: 25px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #e5e7eb;
+
+    text-align: center;
+}
+
+.login-link p {
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+.login-link a {
+    color: #2563eb;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    padding: 30px 20px;
+
+    background-color: #0f172a;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+.footer-logo {
+    margin-bottom: 6px;
+
+    color: #ffffff;
+
+    font-size: 25px;
+
+    font-weight: 700;
+}
+
+.footer-tagline {
+    margin-top: 4px;
+
+    color: #64748b;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 18px 20px;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .nav-links button {
+        font-size: 14px;
+
+        padding: 8px 12px;
+    }
+
+
+    .register-page {
+        min-height: 700px;
+
+        padding: 45px 20px;
+
+        background:
+            linear-gradient(
+                rgba(9, 15, 28, 0.86),
+                rgba(9, 15, 28, 0.90)
+            ),
+            url("https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1200&q=80");
+
+        background-size: cover;
+
+        background-position: center;
+    }
+
+
+    .register-card {
+        padding: 32px 25px;
+    }
+
+
+    .register-header h1 {
+        font-size: 31px;
+    }
+
+
+    .register-header p {
+        font-size: 15px;
+    }
+
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+
+    .form-group input {
+        font-size: 15px;
+    }
+
+
+    .register-submit {
+        font-size: 16px;
+    }
+
+
+    footer {
+        padding: 28px 20px;
+
+        font-size: 14px;
+    }
+}

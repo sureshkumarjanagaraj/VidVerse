@@ -1,0 +1,351 @@
+/* ================================
+   GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+    background-color: #f5f6f8;
+
+    color: #172033;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+
+    height: 72px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #172033;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* ================================
+   MAIN
+================================ */
+
+main {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 70px 20px;
+}
+
+
+/* ================================
+   WELCOME CARD
+================================ */
+
+.welcome-card {
+
+    width: 100%;
+
+    max-width: 465px;
+
+    padding: 38px 45px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dbe2ea;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    box-shadow:
+        0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+
+/* ================================
+   PLAY ICON
+================================ */
+
+.play-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    padding-left: 3px;
+}
+
+
+/* ================================
+   SMALL TITLE
+================================ */
+
+.small-title {
+
+    margin-bottom: 14px;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ================================
+   MAIN HEADING
+================================ */
+
+.welcome-card h1 {
+
+    margin-bottom: 12px;
+
+    color: #172033;
+
+    font-size: 31px;
+
+    font-weight: 650;
+
+    line-height: 1.2;
+}
+
+
+/* ================================
+   SUB HEADING
+================================ */
+
+.welcome-card h2 {
+
+    margin-bottom: 18px;
+
+    color: #172033;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.welcome-card p {
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.description {
+
+    margin-top: 12px;
+}
+
+
+/* ================================
+   PREMIUM BUTTON
+================================ */
+
+.premium-btn {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.premium-btn:hover {
+
+    background-color: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* ================================
+   LOGOUT BUTTON
+================================ */
+
+.logout-btn {
+
+    display: block;
+
+    margin-top: 17px;
+
+    color: #64748b;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+
+    color: #172033;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+
+    padding: 22px 20px;
+
+    background-color: #0f172a;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+.footer-logo {
+
+    margin-bottom: 4px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 700;
+}
+
+.footer-tagline {
+
+    color: #64748b;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+    header {
+
+        height: 65px;
+
+        padding: 0 20px;
+
+    }
+
+    .logo {
+
+        font-size: 25px;
+
+    }
+
+    main {
+
+        padding: 45px 20px;
+
+    }
+
+    .welcome-card {
+
+        padding: 32px 25px;
+
+    }
+
+    .welcome-card h1 {
+
+        font-size: 27px;
+
+    }
+
+    .welcome-card h2 {
+
+        font-size: 18px;
+
+    }
+
+    .premium-btn {
+
+        width: 100%;
+
+    }
+
+}

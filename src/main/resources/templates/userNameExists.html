@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Username Exists</title>
+
+    <link rel="stylesheet"
+          th:href="@{/userNameExists.css}">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="logo">
+            Vid<span>Verse</span>
+        </div>
+
+    </header>
+
+
+    <!-- Main -->
+
+    <main>
+
+        <div class="error-card">
+
+            <div class="error-icon">
+                !
+            </div>
+
+            <div class="small-title">
+                VIDVERSE REGISTRATION
+            </div>
+
+            <h1>
+                Username Already Exists
+            </h1>
+
+            <p>
+                This username is already present in
+                VidVerse.
+            </p>
+
+            <p class="info-text">
+                Please try registering with a different
+                username.
+            </p>
+
+
+            <a href="/register"
+               class="register-btn">
+
+                Go Back to Registration
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

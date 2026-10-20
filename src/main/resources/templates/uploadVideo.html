@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Add Video</title>
+
+    <link rel="stylesheet"
+          href="/add-video.css">
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            Vid<span>Verse</span>
+        </div>
+
+        <a href="/admin" class="back-btn">
+            Back to Admin
+        </a>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <div class="video-card">
+
+            <div class="video-icon">
+                ▶
+            </div>
+
+            <div class="small-title">
+                VIDVERSE ADMIN
+            </div>
+
+            <h1>
+                Add New Video
+            </h1>
+
+            <p class="subtitle">
+                Add a new video and its details to your
+                VidVerse video library.
+            </p>
+
+
+            <!-- ================= FORM ================= -->
+
+            <form action="/add-video" method="post">
+
+
+                <!-- Video Name -->
+
+                <div class="form-group">
+
+                    <label>
+                        Song Name
+                    </label>
+
+                    <input
+                        type="text"
+                        name="videoName"
+                        placeholder="Enter song name"
+                        required>
+
+                </div>
+
+
+                <!-- Hero Name -->
+
+                <div class="form-group">
+
+                    <label>
+						Starring
+                    </label>
+
+                    <input
+                        type="text"
+                        name="heroName"
+                        placeholder="Enter starring actors"
+                        required>
+
+                </div>
+
+
+                <!-- Director Name -->
+
+                <div class="form-group">
+
+                    <label>
+                        Director Name
+                    </label>
+
+                    <input
+                        type="text"
+                        name="directorName"
+                        placeholder="Enter director name"
+                        required>
+
+                </div>
+
+
+                <!-- About / Bio -->
+
+                <div class="form-group">
+
+                    <label>
+                        About / Bio
+                    </label>
+
+                    <textarea
+                        name="bio"
+                        rows="5"
+                        placeholder="Enter song description or bio"></textarea>
+
+                </div>
+
+
+                <!-- YouTube URL -->
+
+                <div class="form-group">
+
+                    <label>
+                        YouTube URL
+                    </label>
+
+                    <input
+                        type="text"
+                        name="videoUrl"
+                        placeholder="https://www.youtube.com/watch?v=5Qk6Xc2ZVkI"
+                        required>
+
+                    <small>
+                        Paste the YouTube video URL here.
+                    </small>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button type="submit">
+                    Add Song
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+	<footer>
+	    <b>VidVerse</b><br>
+	    © 2026 Sureshkumar Janagaraj. All Rights Reserved.<br>
+	    Secure • Premium • Entertainment
+	</footer>
+
+</body>
+
+</html>

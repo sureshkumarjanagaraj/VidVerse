@@ -1,0 +1,277 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #f8fafc;
+
+    color: #172033;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 8%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #172033;
+}
+
+.logo span {
+
+    color: #2563eb;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eef4ff 100%
+        );
+}
+
+
+/* ================= CARD ================= */
+
+.error-card {
+
+    width: 470px;
+
+    padding: 45px 40px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(15, 23, 42, 0.08);
+}
+
+
+/* ================= ICON ================= */
+
+.error-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 24px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #eff6ff;
+
+    border: 2px solid #2563eb;
+
+    color: #2563eb;
+
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+
+/* ================= SMALL TITLE ================= */
+
+.small-title {
+
+    margin-bottom: 10px;
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ================= HEADING ================= */
+
+h1 {
+
+    margin-bottom: 16px;
+
+    color: #172033;
+
+    font-size: 29px;
+
+    line-height: 1.25;
+}
+
+
+/* ================= TEXT ================= */
+
+p {
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+.info-text {
+
+    margin-top: 10px;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+}
+
+
+/* ================= REGISTER BUTTON ================= */
+
+.register-btn {
+
+    display: block;
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 14px 20px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+
+.register-btn:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(37, 99, 235, 0.25);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+footer p {
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .error-card {
+        width: 100%;
+        padding: 40px 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+}

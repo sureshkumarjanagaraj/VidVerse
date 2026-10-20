@@ -1,0 +1,233 @@
+	<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Watch Videos</title>
+
+    <link rel="stylesheet"
+          th:href="@{/watch-videos.css}">
+
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            Vid<span>Verse</span>
+        </div>
+
+
+        <nav class="navigation">
+
+            <a href="/" class="nav-link">
+                Home
+            </a>
+
+            <a href="/" class="logout-link">
+                Logout
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PAGE INTRO ================= -->
+
+    <section class="page-intro">
+
+        <div class="intro-content">
+
+            <div class="premium-label">
+                VIDVERSE PREMIUM
+            </div>
+
+            <h1>
+                Watch Your Favorite
+                <span>Video Songs</span>
+            </h1>
+
+            <p>
+                Enjoy our premium collection of video songs,
+                entertainment and exclusive content all in one place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VIDEO SECTION ================= -->
+
+    <main class="video-container">
+
+
+        <!-- ================= VIDEO LIST ================= -->
+
+        <div class="video-card"
+             th:each="video : ${videos}">
+
+
+            <!-- LEFT SIDE : VIDEO -->
+
+            <div class="video-left">
+
+                <div class="video-wrapper">
+
+                    <iframe
+                        th:src="${video.videoUrl}"
+                        title="VidVerse Premium Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE : DETAILS -->
+
+            <div class="video-right">
+
+                <div class="video-label">
+                    PREMIUM VIDEO
+                </div>
+
+
+                <h2 th:text="${video.videoName}">
+                    Video Name
+                </h2>
+
+
+                <div class="details">
+
+
+                    <!-- HERO -->
+
+                    <div class="detail-row">
+
+                        <div class="detail-icon">
+                            ★
+                        </div>
+
+                        <div>
+
+                            <span class="detail-label">
+								Starring
+                            </span>
+
+                            <span class="detail-value"
+                                  th:text="${video.heroName}">
+                                Hero Name
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DIRECTOR -->
+
+                    <div class="detail-row">
+
+                        <div class="detail-icon">
+                            ●
+                        </div>
+
+                        <div>
+
+                            <span class="detail-label">
+                                Director
+                            </span>
+
+                            <span class="detail-value"
+                                  th:text="${video.directorName}">
+                                Director Name
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="description">
+
+                    <h3>
+                        About this video
+                    </h3>
+
+                    <p th:text="${video.bio}">
+                        Video description will appear here.
+                    </p>
+
+                </div>
+
+
+                <!-- PREMIUM BADGE -->
+
+                <div class="premium-badge">
+
+                    <span class="badge-icon">
+                        ✓
+                    </span>
+
+                    Premium Access
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= EMPTY STATE ================= -->
+
+        <div class="empty-message"
+             th:if="${#lists.isEmpty(videos)}">
+
+            <div class="empty-icon">
+                ▶
+            </div>
+
+            <h2>
+                No Videos Available
+            </h2>
+
+            <p>
+                Premium videos will appear here once they
+                are added to VidVerse.
+            </p>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+	<footer>
+	    <b>VidVerse</b><br>
+	    © 2026 Sureshkumar Janagaraj. All Rights Reserved.<br>
+	    Secure • Premium • Entertainment
+	</footer>
+
+
+</body>
+
+</html>

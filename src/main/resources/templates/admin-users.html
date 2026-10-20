@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - All Users</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f9ff;
+            color: #1e293b;
+        }
+
+        /* Header */
+
+        .header {
+            background: #1565c0;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #ffffff;
+        }
+
+        .admin-title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Main Content */
+
+        .main-container {
+            width: 95%;
+            max-width: 1400px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1565c0;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        /* Table Container */
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(21, 101, 192, 0.12);
+        }
+
+        /* Table */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 900px;
+        }
+
+        th {
+            background: #1565c0;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #dbeafe;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        tbody tr:hover {
+            background: #eff6ff;
+        }
+
+        /* Premium */
+
+        .premium {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #dcfce7;
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        /* Normal User */
+
+        .normal {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #f1f5f9;
+            color: #64748b;
+            font-weight: bold;
+        }
+
+        /* Role */
+
+        .role {
+            font-weight: bold;
+            color: #1565c0;
+        }
+
+        /* Back Button */
+
+        .back-container {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 13px 28px;
+            background: #1565c0;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #0d47a1;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 12px rgba(13, 71, 161, 0.3);
+        }
+
+        /* Footer */
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            color: #64748b;
+            border-top: 1px solid #dbeafe;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="logo">
+            Vid<span>Verse</span>
+        </div>
+
+        <div class="admin-title">
+            Admin Panel
+        </div>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main class="main-container">
+
+        <h1>All Registered Users</h1>
+
+        <p class="subtitle">
+            View all users registered in VidVerse
+        </p>
+
+
+        <!-- User Table -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>User ID</th>
+
+                        <th>Username</th>
+
+                        <th>Email</th>
+
+                        <th>Password</th>
+
+                        <th>Role</th>
+
+                        <th>Phone Number</th>
+
+                        <th>Premium Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr th:each="user : ${users}">
+
+                        <!-- User ID -->
+
+                        <td th:text="${user.userId}">
+                            1
+                        </td>
+
+
+                        <!-- Username -->
+
+                        <td th:text="${user.userName}">
+                            Username
+                        </td>
+
+
+                        <!-- Email -->
+
+                        <td th:text="${user.email}">
+                            example@gmail.com
+                        </td>
+
+
+                        <!-- Password -->
+
+                        <td>
+                            ********
+                        </td>
+
+
+                        <!-- Role -->
+
+                        <td>
+
+                            <span
+                                class="role"
+                                th:text="${user.role}">
+                                USER
+                            </span>
+
+                        </td>
+
+
+                        <!-- Phone Number -->
+
+                        <td th:text="${user.phoneNumber}">
+                            9876543210
+                        </td>
+
+
+                        <!-- Premium Status -->
+
+                        <td>
+
+                            <span
+                                th:if="${user.premium}"
+                                class="premium">
+
+                                Premium
+
+                            </span>
+
+
+                            <span
+                                th:unless="${user.premium}"
+                                class="normal">
+
+                                Normal
+
+                            </span>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- Back To Admin Dashboard -->
+
+        <div class="back-container">
+
+            <a href="/admin" class="back-btn">
+
+                ← Back to Admin Dashboard
+
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+		<p>
+		    © 2026 Sureshkumar Janagaraj.
+		    All Rights Reserved.
+		 </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Video Added</title>
+
+    <link rel="stylesheet"
+          href="/video-added.css?v=1">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            VidVerse
+        </div>
+
+        <div class="nav-links">
+
+            <button onclick="window.location.href='/'">
+                Home
+            </button>
+
+            <button onclick="window.location.href='/about'">
+                About
+            </button>
+
+            <button onclick="window.location.href='/login'">
+                Login
+            </button>
+
+            <button class="register-btn"
+                    onclick="window.location.href='/register'">
+                Register
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         SUCCESS SECTION
+    ========================= -->
+
+    <main class="success-section">
+
+        <div class="success-card">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <span class="success-label">
+                VIDVERSE ADMIN
+            </span>
+
+            <h1 th:text="${message}">
+                Video Successfully Added!
+            </h1>
+
+            <p>
+                The video song has been successfully added
+                to the VidVerse collection.
+            </p>
+
+
+            <div class="button-container">
+
+                <a href="/uploadvideo"
+                   class="primary-btn">
+                    Upload Another Video
+                </a>
+
+                <a href="/watch-videos"
+                   class="secondary-btn">
+                    Watch Videos
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            VidVerse
+        </div>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj.
+            All Rights Reserved.
+			<br>
+			Secure • Premium • Entertainment
+        </p>
+
+        <p class="footer-tagline">
+            Secure &nbsp; • &nbsp;
+            Premium &nbsp; • &nbsp;
+            Entertainment
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

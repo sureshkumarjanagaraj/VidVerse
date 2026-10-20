@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>VidVerse - Premium</title>
+
+    <link rel="stylesheet" href="/payment.css">
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            VidVerse
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <div class="payment-card">
+
+            <div class="premium-icon">
+                ▶
+            </div>
+
+            <div class="small-title">
+                PREMIUM VIDEO PLATFORM
+            </div>
+
+            <h1>
+                Unlock Premium Videos
+            </h1>
+
+            <p>
+                Subscribe to enjoy premium video songs
+                and exclusive entertainment on VidVerse.
+            </p>
+
+            <p class="description">
+                Get access to high-quality premium content
+                and enjoy your favorite videos anytime.
+            </p>
+
+            <button onclick="startPayment()">
+                Get Premium Access
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <b>VidVerse</b>
+
+        <p>
+            © 2026 Sureshkumar Janagaraj. All Rights Reserved.
+        </p>
+
+        <p>
+            Secure • Premium • Entertainment
+        </p>
+
+    </footer>
+
+
+    <!-- RAZORPAY -->
+
+    <script th:inline="javascript">
+
+        var keyId = /*[[${keyId}]]*/ '';
+
+        function startPayment() {
+
+            fetch('/create-order')
+                .then(response => response.json())
+                .then(order => {
+
+                    var options = {
+
+                        "key": keyId,
+
+                        "amount": order.amount,
+
+                        "currency": "INR",
+
+                        "name": "VidVerse",
+
+                        "description": "Premium Video",
+
+                        "order_id": order.id,
+
+                        "handler": function(response) {
+
+                            window.location.href =
+                                "/premium-success";
+
+                        },
+
+                        "prefill": {
+
+                            "name": "Demo User",
+
+                            "email": "demo@example.com",
+
+                            "contact": "9999999999"
+
+                        },
+
+                        "theme": {
+
+                            "color": "#2563eb"
+
+                        }
+
+                    };
+
+                    var razorpay =
+                        new Razorpay(options);
+
+                    razorpay.open();
+
+                })
+                .catch(error => {
+
+                    console.error(error);
+
+                    alert("Unable to create payment order.");
+
+                });
+
+        }
+
+    </script>
+
+</body>
+
+</html>

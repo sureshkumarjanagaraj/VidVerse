@@ -1,0 +1,746 @@
+/* =========================================================
+   VIDVERSE - WATCH VIDEOS
+   Theme: White + Navy + Blue
+   ========================================================= */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f6f8fc;
+
+    color: #172033;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    letter-spacing: -0.5px;
+
+    color: #172033;
+}
+
+
+.logo span {
+
+    color: #2563eb;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navigation {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.nav-link,
+.logout-link {
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    color: #475569;
+
+    transition: 0.25s ease;
+}
+
+
+.nav-link:hover,
+.logout-link:hover {
+
+    color: #2563eb;
+}
+
+
+/* ================= LOGOUT ================= */
+
+.logout-link {
+
+    padding: 9px 18px;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+}
+
+
+.logout-link:hover {
+
+    border-color: #2563eb;
+
+    background: #f8fbff;
+}
+
+
+/* ================= PAGE INTRO ================= */
+
+.page-intro {
+
+    padding: 55px 8% 45px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0b1220 0%,
+            #111d35 100%
+        );
+
+    color: #ffffff;
+}
+
+
+.intro-content {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+
+/* ================= PREMIUM LABEL ================= */
+
+.premium-label {
+
+    margin-bottom: 12px;
+
+    color: #60a5fa;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= INTRO HEADING ================= */
+
+.page-intro h1 {
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+
+    font-weight: 700;
+}
+
+
+.page-intro h1 span {
+
+    color: #60a5fa;
+}
+
+
+/* ================= INTRO TEXT ================= */
+
+.page-intro p {
+
+    max-width: 650px;
+
+    color: #cbd5e1;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= VIDEO CONTAINER ================= */
+
+.video-container {
+
+    width: 84%;
+
+    max-width: 1250px;
+
+    margin: 45px auto;
+
+    flex: 1;
+}
+
+
+/* ================= VIDEO CARD ================= */
+
+.video-card {
+
+    display: flex;
+
+    gap: 35px;
+
+    margin-bottom: 35px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    box-shadow:
+
+        0 10px 30px
+
+        rgba(15, 23, 42, 0.07);
+
+    transition: 0.25s ease;
+}
+
+
+/* ================= CARD HOVER ================= */
+
+.video-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 15px 35px
+
+        rgba(15, 23, 42, 0.10);
+}
+
+
+/* ================= LEFT VIDEO ================= */
+
+.video-left {
+
+    width: 58%;
+
+    min-width: 0;
+}
+
+
+/* ================= VIDEO WRAPPER ================= */
+
+.video-wrapper {
+
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background: #0b1220;
+
+    aspect-ratio: 16 / 9;
+}
+
+
+/* ================= IFRAME ================= */
+
+.video-wrapper iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    border: none;
+}
+
+
+/* ================= RIGHT DETAILS ================= */
+
+.video-right {
+
+    width: 42%;
+
+    padding: 8px 15px 8px 5px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ================= VIDEO LABEL ================= */
+
+.video-label {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-bottom: 10px;
+
+    padding: 5px 10px;
+
+    border-radius: 4px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* ================= VIDEO TITLE ================= */
+
+.video-right h2 {
+
+    margin-bottom: 22px;
+
+    color: #172033;
+
+    font-size: 28px;
+
+    line-height: 1.25;
+}
+
+
+/* ================= DETAILS ================= */
+
+.details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* ================= DETAIL ROW ================= */
+
+.detail-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* ================= DETAIL ICON ================= */
+
+.detail-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+/* ================= DETAIL LABEL ================= */
+
+.detail-label {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.8px;
+}
+
+
+/* ================= DETAIL VALUE ================= */
+
+.detail-value {
+
+    display: block;
+
+    color: #334155;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ================= DESCRIPTION ================= */
+
+.description {
+
+    padding-top: 22px;
+}
+
+
+.description h3 {
+
+    margin-bottom: 9px;
+
+    color: #172033;
+
+    font-size: 16px;
+}
+
+
+.description p {
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* ================= PREMIUM BADGE ================= */
+
+.premium-badge {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    width: fit-content;
+
+    margin-top: auto;
+
+    padding-top: 22px;
+
+    color: #2563eb;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* ================= BADGE ICON ================= */
+
+.badge-icon {
+
+    width: 20px;
+
+    height: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* ================= EMPTY STATE ================= */
+
+.empty-message {
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+}
+
+
+.empty-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 24px;
+}
+
+
+.empty-message h2 {
+
+    margin-bottom: 10px;
+
+    color: #172033;
+}
+
+
+.empty-message p {
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    padding: 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+footer p {
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+    .video-card {
+
+        gap: 25px;
+
+    }
+
+    .video-right h2 {
+
+        font-size: 24px;
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .header {
+
+        padding: 0 25px;
+
+    }
+
+
+    .navigation {
+
+        gap: 15px;
+
+    }
+
+
+    .page-intro {
+
+        padding: 45px 25px;
+
+    }
+
+
+    .page-intro h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .video-container {
+
+        width: 92%;
+
+        margin: 30px auto;
+
+    }
+
+
+    .video-card {
+
+        flex-direction: column;
+
+        padding: 18px;
+
+    }
+
+
+    .video-left,
+    .video-right {
+
+        width: 100%;
+
+    }
+
+
+    .video-right {
+
+        padding: 10px 5px 5px;
+
+    }
+
+
+    .video-right h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .premium-badge {
+
+        margin-top: 20px;
+
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 500px) {
+
+    .logo {
+
+        font-size: 24px;
+
+    }
+
+
+    .nav-link {
+
+        display: none;
+
+    }
+
+
+    .logout-link {
+
+        padding: 8px 13px;
+
+        font-size: 13px;
+
+    }
+
+
+    .page-intro h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .page-intro p {
+
+        font-size: 14px;
+
+    }
+
+}
